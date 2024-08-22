@@ -1,1 +1,1 @@
-This is a project created only for me to learn AL language for business central. Thank you.
+This is a project created by me during the process of learning AL language for business central. Thank you.

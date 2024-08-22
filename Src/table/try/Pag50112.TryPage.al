@@ -28,6 +28,10 @@ page 50112 TryPage
                 {
                     ToolTip = 'Specifies the value of the Contact Person field.', Comment = '%';
                 }
+                field(Address; Rec.Address)
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }

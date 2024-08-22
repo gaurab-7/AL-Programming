@@ -24,6 +24,11 @@ table 50107 Try
             FieldClass = FlowField;
             CalcFormula = lookup(Customer.Contact where("No." = field("TNo.")));
         }
+        field(5; Address; Text[50])
+        {
+            Caption = 'Address';
+            DataClassification = ToBeClassified;
+        }
     }
     keys
     {

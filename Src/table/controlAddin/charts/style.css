@@ -1,0 +1,8 @@
+#piechart {
+    display: flex;
+    justify-content: center;
+}
+
+#controlAddIn {
+    height: 100px;
+}

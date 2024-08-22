@@ -1,0 +1,28 @@
+#myProgress {
+    width: 100%;
+    background-color: #ebedef;
+  }
+  
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #04AA6D;
+    /* background-color: rgb(0, 131, 143); */
+    display: flex;
+    align-items: center;
+    padding-left: .5rem;
+    justify-content: center;
+  }
+
+  #space,#space1 {
+    background-color: antiquewhite;
+    color: black;
+    font-size: 15px;
+    height: 30px;
+    width: 100%;
+    margin-top: 9px;
+    text-align: center;
+    padding-left: 0.5rem;
+    justify-content: center;
+  }
+  

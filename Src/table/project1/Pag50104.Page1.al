@@ -129,6 +129,17 @@ page 50104 Page1
                     end;
                 end;
             }
+            // action(GetRecords)
+            // {
+            //     Image = GetEntries;
+
+            //     trigger OnAction()
+            //     var
+            //         MyCodeunit: Codeunit MyCodeunit;
+            //     begin
+            //         MyCodeunit.GetRates();
+            //     end;
+            // }
         }
     }
 }

@@ -33,4 +33,9 @@ table 50118 "Currency Rates"
             Clustered = true;
         }
     }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Country Code", "Country Name") { }
+    }
 }

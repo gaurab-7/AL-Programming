@@ -101,31 +101,31 @@ codeunit 50102 "Inventory Code Unit"
     // end;
 
     [EventSubscriber(ObjectType::Table, Database::CustomersInv, 'OnAfterInsertEvent', '', true, true)]
-    local procedure OnAfterInsert()
+    local procedure OnAfterInsertEvent()
     begin
         Message('Event subscriber');
     end;
 
     [EventSubscriber(ObjectType::Table, Database::CustomersInv, 'OnAfterDeleteEvent', '', true, true)]
-    local procedure MyProcedure()
+    local procedure OnAfterDeleteEvent()
     begin
         Message('Deleted !');
     end;
 
     [EventSubscriber(ObjectType::Table, Database::CustomersInv, 'OnAfterValidateEvent', 'Address', true, true)]
-    local procedure ValidateAddress()
+    local procedure OnAfterValidateEvent()
     begin
         Message('Validate Address');
     end;
 
     // [EventSubscriber(ObjectType::Page, Page::CustomerInventoryPage, 'OnOpenPageEvent', '', true, true)]
-    // local procedure PageOpen()
+    // local procedure OnOpenPageEvent()
     // begin
     //     Message('Page opened !');
     // end;
 
     // [EventSubscriber(ObjectType::Page, Page::CustomerInventoryPage, 'OnClosePageEvent', '', true, true)]
-    // local procedure PageClose()
+    // local procedure OnClosePageEvent()
     // begin
     //     Message('Page closed !');
     // end;

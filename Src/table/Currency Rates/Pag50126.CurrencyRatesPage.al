@@ -57,6 +57,7 @@ page 50126 "Currency Rates Page"
                     MyCodeunit: Codeunit MyCodeunit;
                 begin
                     MyCodeunit.GetRates();
+                    Message('Rates successfully updated !');
                 end;
             }
         }

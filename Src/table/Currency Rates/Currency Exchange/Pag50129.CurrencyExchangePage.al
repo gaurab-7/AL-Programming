@@ -10,7 +10,7 @@ page 50129 "Currency Exchange"
         {
             group(General)
             {
-                Caption = 'General';
+                Caption = 'Curreny Exchange Portal';
 
                 field("Country Code"; CountryCode)
                 {
@@ -38,8 +38,6 @@ page 50129 "Currency Exchange"
                 {
                     ToolTip = 'Specifies the value of the Exchange Type field.', Comment = '%';
                     trigger OnValidate()
-                    var
-
                     begin
                         case ExchangeType of
                             ExchangeType::Buy:

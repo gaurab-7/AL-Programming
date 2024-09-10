@@ -21,7 +21,6 @@ codeunit 50103 MyCodeunit
         if client.Send(request, response) then
             if response.IsSuccessStatusCode() then begin
                 response.Content.ReadAs(outputString);
-                // Message('%1', outputString);
                 ParseResponse(outputString);
             end else
                 Error('Error %1', response.ReasonPhrase);
@@ -58,6 +57,5 @@ codeunit 50103 MyCodeunit
             CurrencyRates.Unit := ResultToken.AsValue().AsInteger();
             CurrencyRates.Insert();
         end;
-        Message('Rates successfully updated !');
     end;
 }

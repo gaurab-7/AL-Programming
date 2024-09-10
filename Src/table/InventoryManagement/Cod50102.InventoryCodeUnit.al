@@ -64,42 +64,6 @@ codeunit 50102 "Inventory Code Unit"
                 Error('Type should be mentioned before continuing !');
     end;
 
-    //Posting data into the customer inventory page from data entry card....
-    // procedure TransferData(No: Code[20]; Quantity: Integer; Type: Option " ","Purchase","Sales"; TransID: Code[20]; ItemName: Text[20]; CustNo: Code[20]; UnitPrice: Decimal)
-    // var
-    //     CustomerInventory: Record "Inventory Customer";
-    //     CustomerDetails: Record CustomersInv;
-    //     DataEntryTable: Record "Data Entry Table";
-    //     VendorDetails: Record "Vendor Details";
-    // begin
-    //     CustomerDetails.Reset();
-    //     CustomerDetails.SetRange("Customer No.", CustNo);
-    //     if CustomerDetails.FindFirst() then begin
-    //         CustomerInventory."Customer Name" := CustomerDetails.Name;
-    //         CustomerInventory."Transaction ID" := TransID;
-    //         CustomerInventory.Type := Type;
-    //         CustomerInventory."Customer No." := CustNo;
-    //         CustomerInventory."Item No." := No;
-    //         CustomerInventory.Amount := UnitPrice * Quantity;
-    //         CustomerInventory."Item Name" := ItemName;
-    //         CustomerInventory."Item Quantity" := Quantity;
-    //         CustomerInventory.Insert();
-    //         DataEntryTable.DeleteAll();
-    //     end;
-    // end;
-
-    // procedure AmountCalc(Itm:Code[20]; Qty:Integer)
-    // var
-    // InventoryMgmt : Record "Inventory Management";
-    // InventoryCust : Record "Inventory Customer";
-    // begin
-    //     InventoryMgmt.Reset();
-    //     InventoryMgmt.SetRange("Item No.",Itm);
-    //     if InventoryMgmt.FindFirst() then begin
-    //         InventoryCust.Amount := InventoryMgmt."Unit Price" * Qty;
-    //     end;
-    // end;
-
     [EventSubscriber(ObjectType::Table, Database::CustomersInv, 'OnAfterInsertEvent', '', true, true)]
     local procedure OnAfterInsertEvent()
     begin
@@ -117,16 +81,4 @@ codeunit 50102 "Inventory Code Unit"
     begin
         Message('Validate Address');
     end;
-
-    // [EventSubscriber(ObjectType::Page, Page::CustomerInventoryPage, 'OnOpenPageEvent', '', true, true)]
-    // local procedure OnOpenPageEvent()
-    // begin
-    //     Message('Page opened !');
-    // end;
-
-    // [EventSubscriber(ObjectType::Page, Page::CustomerInventoryPage, 'OnClosePageEvent', '', true, true)]
-    // local procedure OnClosePageEvent()
-    // begin
-    //     Message('Page closed !');
-    // end;
 }

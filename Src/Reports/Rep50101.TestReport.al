@@ -52,6 +52,27 @@ report 50101 TestReport
             }
         }
     }
+    requestpage
+    {
+        layout
+        {
+            area(Content)
+            {
+                group(Option)
+                {
+                    field(Number; Number)
+                    {
+                        ApplicationArea = All;
+                    }
+                }
+            }
+        }
+
+        trigger OnInit()
+        begin
+            Number := 98889;
+        end;
+    }
 
     trigger OnPreReport()
     begin
@@ -63,4 +84,5 @@ report 50101 TestReport
         CompInfo: Record "Company Information";
         SN: Integer;
         Temp: Integer;
+        Number: Integer;
 }

@@ -1,8 +1,8 @@
 controladdin detailControl
 {
-    Scripts = 'Src\table\controlAddin\DetailControlAddin\script.js';
-    StyleSheets = 'Src\table\controlAddin\DetailControlAddin\style.css';
-    StartupScript = 'Src\table\controlAddin\DetailControlAddin\startup.js';
+    Scripts = 'Src\controlAddin\DetailControlAddin\script.js';
+    StyleSheets = 'Src\controlAddin\DetailControlAddin\style.css';
+    StartupScript = 'Src\controlAddin\DetailControlAddin\startup.js';
     HorizontalStretch = true;
     MinimumHeight = 500;
     MaximumHeight = 500;

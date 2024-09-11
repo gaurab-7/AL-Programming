@@ -1,8 +1,8 @@
 controladdin MyProgressBar
 {
-    Scripts = 'Src\table\controlAddin\script.js';
-    StyleSheets = 'Src\table\controlAddin\progress.css';
-    StartupScript = 'Src\table\controlAddin\startup.js';
+    Scripts = 'Src\controlAddin\script.js';
+    StyleSheets = 'Src\controlAddin\progress.css';
+    StartupScript = 'Src\controlAddin\startup.js';
     MinimumHeight = 50;
     MaximumHeight = 50;
     HorizontalStretch = true;

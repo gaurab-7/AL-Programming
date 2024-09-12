@@ -1,7 +1,7 @@
 report 50106 "LC Detail Trial Bal. NEP"
 {
     DefaultLayout = RDLC;
-    RDLCLayout = 'src/5.Report/RDLC Layouts/LCDetailTrialBalance.rdl';
+    RDLCLayout = 'Src/Localization/Rep50106.LCDetailTrialBalNEP.rdl';
     Caption = 'LC Report';
     UsageCategory = ReportsAndAnalysis;
 

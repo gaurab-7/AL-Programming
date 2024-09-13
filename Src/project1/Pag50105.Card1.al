@@ -119,6 +119,15 @@ page 50105 Card1
                         CurrPage.MyProgressBar.SetProgress(Rec.ProgressBar);
                         CurrPage.MyProgressBar.appendName(Rec.Name, compInfo.Name);
                     end;
+
+                    trigger Triggerevent()
+                    var
+                        ChangeLogEntry: Record "Change Log Entry";
+                    begin
+                        ChangeLogEntry.SetRange("Table Caption", Rec.TableName);
+                        ChangeLogEntry.SetRange("Primary Key Field 1 Value", Rec."No.");
+                        Page.Run(Page::"Change Log Entries", ChangeLogEntry);
+                    end;
                 }
             }
 

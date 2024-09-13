@@ -25,4 +25,17 @@
     padding-left: 0.5rem;
     justify-content: center;
   }
+
+  #ChangeLog {
+    height: 30px;
+    font-size: 15px;
+    margin-top: 9px;
+    color: blue;
+  }
+
+  #ChangeLog:hover{
+    text-underline-position: below;
+    color: brown;
+    cursor: pointer;
+  }
   

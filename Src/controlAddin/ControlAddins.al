@@ -11,5 +11,5 @@ controladdin MyProgressBar
     procedure SetProgress(Progress: Integer);
     procedure alert();
     procedure appendName(name: Text[100]; compName: Text[100]);
-    event Triggerevent();
+    event ChangeLog();
 }

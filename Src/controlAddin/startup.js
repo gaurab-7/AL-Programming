@@ -10,5 +10,5 @@ Microsoft.Dynamics.NAV.InvokeExtensibilityMethod("IAMReady");
 
 let changelogclick = document.getElementById("ChangeLog");
 changelogclick.addEventListener("click", () => {
-  Microsoft.Dynamics.NAV.InvokeExtensibilityMethod("Triggerevent");
+  Microsoft.Dynamics.NAV.InvokeExtensibilityMethod("ChangeLog");
 });

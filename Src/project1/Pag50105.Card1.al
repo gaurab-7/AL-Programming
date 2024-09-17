@@ -120,7 +120,7 @@ page 50105 Card1
                         CurrPage.MyProgressBar.appendName(Rec.Name, compInfo.Name);
                     end;
 
-                    trigger Triggerevent()
+                    trigger ChangeLog()
                     var
                         ChangeLogEntry: Record "Change Log Entry";
                     begin

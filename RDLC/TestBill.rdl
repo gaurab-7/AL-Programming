@@ -1829,6 +1829,9 @@ End Function
         <Field Name="Line_Discount_AmountFormat">
           <DataField>Line_Discount_AmountFormat</DataField>
         </Field>
+        <Field Name="CompanyInfoKOPicture">
+          <DataField>CompanyInfoKOPicture</DataField>
+        </Field>
       </Fields>
       <Query>
         <DataSourceName>DataSource</DataSourceName>

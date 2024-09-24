@@ -10,7 +10,14 @@
   "help": "",
   "url": "",
   "logo": "",
-  "dependencies": [],
+  "dependencies": [
+    {
+    "id": "dd36a07b-433d-497e-b654-3c3119397421",
+    "name": "ALProject1",
+    "publisher": "Default Publisher",
+    "version": "1.0.0.0"
+  }
+  ],
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "21.0.0.0",

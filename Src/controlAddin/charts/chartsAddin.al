@@ -5,4 +5,7 @@ controladdin chartsAddIns
     StyleSheets = 'Src\controlAddin\charts\style.css';
     HorizontalStretch = true;
     VerticalStretch = true;
+    MinimumHeight = 500;
+    MaximumHeight = 700;
+    RequestedHeight = 500;
 }

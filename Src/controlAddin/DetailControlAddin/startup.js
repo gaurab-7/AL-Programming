@@ -9,6 +9,7 @@ main.innerHTML = `<div id="mainDiv">
 let button = document.getElementById("Go");
 let circle = document.getElementById("circle");
 circle.addEventListener("click", () => {
+  console.log("Hello");
   let loader = document.getElementById("circle");
   if (shown == true) {
     loader.classList.add("loader");

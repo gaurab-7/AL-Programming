@@ -151,9 +151,23 @@ page 50105 Card1
             }
             group(Details2)
             {
+                field(Title; Title)
+                {
+                    ApplicationArea = All;
+                }
+                field(Values; Values)
+                {
+                    Caption = 'Values (Comma Separated)';
+                    ApplicationArea = All;
+                }
                 usercontrol(chartsAddIns; chartsAddIns)
                 {
                     ApplicationArea = All;
+
+                    trigger ChartReady()
+                    begin
+                        CurrPage.chartsAddIns.setData(Title, Values);
+                    end;
                 }
             }
         }
@@ -193,4 +207,6 @@ page 50105 Card1
 
     var
         compInfo: Record "Company Information";
+        Title: Text[50];
+        Values: Text[50];
 }

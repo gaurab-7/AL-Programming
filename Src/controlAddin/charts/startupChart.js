@@ -1,11 +1,19 @@
 var addin = document.getElementById("controlAddIn");
 
 addin.innerHTML =
-  '<div id="piechart"><canvas id="myChart" style="width:100%;max-width:600px"></canvas></div>';
+  '<div id="main"><button id="GenerateBtn">Generate !</button><div id="piechart"><canvas id="myChart" style="width:100%;max-width:600px"></canvas></div></div>';
+
+let GenerateBtn = document.getElementById("GenerateBtn");
+
+GenerateBtn.addEventListener("click", () => {
+  setData();
+});
 
 var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-var yValues = [55, 49, 44, 24, 15];
+var yValues = array;
 var barColors = ["#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145"];
+let array = [];
+let Heading = String;
 
 new Chart("myChart", {
   type: "pie",
@@ -21,7 +29,9 @@ new Chart("myChart", {
   options: {
     title: {
       display: true,
-      text: "World Wide Wine Production 2018",
+      text: Heading,
     },
   },
 });
+
+Microsoft.Dynamics.NAV.InvokeExtensibilityMethod("ChartReady");

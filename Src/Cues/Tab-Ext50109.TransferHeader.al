@@ -31,15 +31,4 @@ tableextension 50109 "Transfer Header" extends "Transfer Header"
             DataClassification = ToBeClassified;
         }
     }
-    // trigger OnAfterInsert()
-    // var
-    //     GeneralLedgerSetup: Record "General Ledger Setup";
-    //     NoSeriesMgt: Codeunit NoSeriesManagement;
-    // begin
-    //     if Rec."No." = '' then begin
-    //         GeneralLedgerSetup.Get();
-    //         GeneralLedgerSetup.TestField("T-Loan No. Series");
-    //         NoSeriesMgt.InitSeries(GeneralLedgerSetup."T-Loan No. Series", xRec."No. Series", 0D, Rec."No.", Rec."No. Series");
-    //     end;
-    // end;
 }

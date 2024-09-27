@@ -23,5 +23,9 @@ tableextension 50100 CustomerExt extends Customer
             FieldClass = FlowField;
             CalcFormula = lookup(Try.UName where("TNo." = field("No.")));
         }
+        field(50112; Gender; Option)
+        {
+            OptionMembers = Male,Female,Other;
+        }
     }
 }
